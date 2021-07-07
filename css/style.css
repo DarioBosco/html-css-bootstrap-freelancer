@@ -9,16 +9,21 @@
 
 body {
 	font-family: 'Helvetica Neue', sans-serif;
-	color: white;
 }
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Header */
-
-
+#header {
+	background: #2c3e50;
+	color: #fff;
+}
 /* Fine Header */
 /* -------------------------------------------------- */
 /* Inizio Main */
+#jumbotron {
+	background: #1abc9c;
+	color: #fff;
+}
 
 /* Fine Main */
 /* -------------------------------------------------- */
@@ -27,13 +32,13 @@ body {
 /* Fine Footer */
 /* -------------------------------------------------- */
 
-/* !DEBUG ZONE! */
-
-.debug #header {
-	height: 50px;
-	background: #2c3e50;
+.debug .image-box {
+	height: 150px;
+	width: 150px;
+	background: lightblue;
 }
 
-.debug #header .container {
-	height: 100%;
+.spacer {
+	height: 5px;
+	width: auto;
 }
