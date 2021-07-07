@@ -3,12 +3,18 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 /* -------------------------------------------------- */
 /* Inizio Common */
 
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	color: white;
+}
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Header */
+
 
 /* Fine Header */
 /* -------------------------------------------------- */
@@ -22,3 +28,12 @@
 /* -------------------------------------------------- */
 
 /* !DEBUG ZONE! */
+
+.debug #header {
+	height: 50px;
+	background: #2c3e50;
+}
+
+.debug #header .container {
+	height: 100%;
+}
