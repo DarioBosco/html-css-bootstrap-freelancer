@@ -20,7 +20,8 @@ body {
 /* Fine Header */
 /* -------------------------------------------------- */
 /* Inizio Main */
-#jumbotron {
+#jumbotron,
+#about {
 	background: #1abc9c;
 	color: #fff;
 }
@@ -32,13 +33,15 @@ body {
 /* Fine Footer */
 /* -------------------------------------------------- */
 
-.debug .image-box {
-	height: 150px;
-	width: 150px;
+.image-box {
 	background: lightblue;
 }
 
 .spacer {
 	height: 5px;
 	width: auto;
+}
+
+.image-box.rounded {
+	height: 200px;
 }

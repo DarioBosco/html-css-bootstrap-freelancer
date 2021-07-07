@@ -6,6 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Importazione CSS per Bootstrap 5.0.2 -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+		<!-- Importazione CSS per FontAwesome 5.15.3 -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 		<link rel="stylesheet" href="./css/style.css" />
 
 		<title>Bootstrap Freelancer</title>
@@ -35,14 +38,15 @@
 
 		<!-- Inizio Main -->
 		<main>
+			<!-- Inizio Jumbotron -->
 			<section id="jumbotron" class="container-fluid">
-				<div class="container h-100 p-4">
-					<div class="row h-50 p-4 justify-content-center">
-						<div class="col-auto">
-							<div class="image-box rounded-circle"></div>
+				<div class="container h-100 pt-4 pb-4">
+					<div class="row h-50 pt-4 justify-content-center">
+						<div class="col-2">
+							<div class="image-box rounded-circle ratio ratio-1x1"></div>
 						</div>
 					</div>
-					<div class="row h-50 justify-content-center">
+					<div class="row h-50 pt-4 justify-content-center">
 						<div class="col-auto">
 							<h1 class="text-center m-0 pb-3">START BOOTSTRAP</h1>
 							<div class="text-center pb-3">-----------------------------------------------------</div>
@@ -51,15 +55,58 @@
 					</div>
 				</div>
 			</section>
-			<section id="portfolio">
-				<div class="container h-100 p-4">
+			<!-- Fine Jumbotron -->
+			<!-- Inizio Portfolio -->
+			<section id="portfolio" class="container-fluid">
+				<div class="container h-100 pt-4 pb-1">
 					<div class="row h-50 justify-content-center align-items-start">
 						<h2 class="text-center m-0 pb-3">PORTFOLIO</h2>
-						<div class="text-center pb-1">-----------------------------------------------------</div>
+						<div class="text-center pb-3">-----------------------------------------------------</div>
 					</div>
-					<div class="row"></div>
+					<div class="row">
+						<div class="col-4 pb-4">
+							<div class="image-box rounded"></div>
+						</div>
+						<div class="col-4 pb-4">
+							<div class="image-box rounded"></div>
+						</div>
+						<div class="col-4 pb-4">
+							<div class="image-box rounded"></div>
+						</div>
+						<div class="col-4 pb-4">
+							<div class="image-box rounded"></div>
+						</div>
+						<div class="col-4 pb-4">
+							<div class="image-box rounded"></div>
+						</div>
+						<div class="col-4 pb-4">
+							<div class="image-box rounded"></div>
+						</div>
+					</div>
 				</div>
 			</section>
+			<!-- Fine Portfolio -->
+			<!-- Inizio About -->
+			<section id="about" class="container-fluid">
+				<div class="container h-100 pt-4 pb-4">
+					<div class="row h-50 pt-4 justify-content-center">
+						<div class="col-auto">
+							<h1 class="text-center m-0 pb-3">ABOUT</h1>
+							<div class="text-center pb-3">-----------------------------------------------------</div>
+						</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo debitis laboriosam, commodi et ad veniam quasi dolores ipsa magni qui, a deleniti, consectetur sequi. Rerum repellat eaque beatae sapiente?</div>
+						<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo debitis laboriosam, commodi et ad veniam quasi dolores ipsa magni qui, a deleniti, consectetur sequi. Rerum repellat eaque beatae sapiente?</div>
+					</div>
+					<div class="row mb-4">
+						<div class="col text-center">
+							<button type="button" class="btn btn-link border text-decoration-none text-reset"><i class="fas fa-download"></i> Download</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Fine About -->
 		</main>
 		<!-- Fine Main -->
 
