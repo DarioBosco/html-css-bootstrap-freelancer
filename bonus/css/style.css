@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* -------------------------------------------------- */
+/* Inizio Common */
+
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+.spacer::before,
+.spacer::after {
+	content: '';
+	height: 0.25em;
+	width: 7.5em;
+	border-radius: 3em;
+	margin: 1em;
+	background: white;
+}
+
+.spacer-black::before,
+.spacer-black::after {
+	background: black;
+}
+
+/* Fine Common */
+/* -------------------------------------------------- */
+/* Inizio Header */
+.navbar {
+	background: #2c3e50;
+	color: #fff;
+}
+
+/* Fine Header */
+/* -------------------------------------------------- */
+/* Inizio Main */
+
+#jumbotron,
+#about {
+	background: #1abc9c;
+	color: #fff;
+}
+
+/* Box Messaggio in Contact Me */
+
+#contact-me button {
+	background: #1abc9c;
+	color: #fff;
+}
+/* Fine Main */
+/* -------------------------------------------------- */
+/* Inizio Footer */
+#top-footer,
+#bottom-footer {
+	color: #fff;
+}
+
+#top-footer {
+	background: #3a546d;
+}
+
+#bottom-footer {
+	background: #2c3e50;
+}
+
+#footer-socials i {
+	height: 35px;
+	width: 35px;
+}
+
+#footer-about a {
+	color: #1abc9c;
+}
+/* Fine Footer */
+/* -------------------------------------------------- */
+
+/* Media Queries */
+@media (max-width: 767px) {
+	#footer-socials i {
+		height: 70px;
+		width: 70px;
+		font-size: 24px;
+		line-height: 50px;
+	}
+}
