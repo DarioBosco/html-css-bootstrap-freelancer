@@ -42,6 +42,10 @@ img {
 /* -------------------------------------------------- */
 /* Inizio Main */
 
+#jumbotron {
+	margin-top: 56px;
+}
+
 #jumbotron,
 #about {
 	background: #1abc9c;
