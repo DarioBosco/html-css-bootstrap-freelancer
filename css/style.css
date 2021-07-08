@@ -90,3 +90,13 @@ body {
 		margin-bottom: 50px;
 	}
 }
+
+@media (min-width: 768px) {
+	header button {
+		display: none;
+	}
+
+	header #navbarToggleExternalContent {
+		display: block;
+	}
+}
