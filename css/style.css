@@ -26,10 +26,20 @@ body {
 	color: #fff;
 }
 
+/* Box Messaggio in Contact Me */
+span.ps-0:nth-child(7) {
+	height: 120px;
+}
+#contact-me button {
+	background: #1abc9c;
+	color: #fff;
+}
 /* Fine Main */
 /* -------------------------------------------------- */
 /* Inizio Footer */
-
+footer {
+	height: 500px;
+}
 /* Fine Footer */
 /* -------------------------------------------------- */
 
