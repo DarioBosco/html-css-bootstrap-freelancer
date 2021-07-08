@@ -17,18 +17,25 @@
 	<body class="debug">
 		<!-- Inizio Header -->
 		<header>
-			<div id="header" class="container-fluid">
+			<div id="header" class="container-fluid fixed-top">
 				<div class="container h-100">
 					<div class="row h-100 pt-3 pb-3 justify-content-center align-items-center">
 						<div id="header-title" class="col d-flex align-items-center">
 							<h6 class="m-0">START BOOTSTRAP</h6>
 						</div>
 						<div class="col d-flex justify-content-end align-items-center">
-							<ul class="list-unstyled m-0">
-								<li class="d-inline-block"><a class="text-reset text-decoration-none" href="#">PORTFOLIO</a></li>
-								<li class="d-inline-block ps-3"><a class="text-reset text-decoration-none" href="#">ABOUT</a></li>
-								<li class="d-inline-block ps-3"><a class="text-reset text-decoration-none" href="#">CONTACT</a></li>
-							</ul>
+							<div id="navbarToggleExternalContent" class="collapse">
+								<ul class="list-unstyled m-0">
+									<li class="d-inline-block"><a class="text-reset text-decoration-none" href="#">PORTFOLIO</a></li>
+									<li class="d-inline-block ps-3"><a class="text-reset text-decoration-none" href="#">ABOUT</a></li>
+									<li class="d-inline-block ps-3"><a class="text-reset text-decoration-none" href="#">CONTACT</a></li>
+								</ul>
+							</div>
+							<nav class="navbar navbar-dark">
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+							</nav>
 						</div>
 					</div>
 				</div>
@@ -42,7 +49,7 @@
 			<section id="jumbotron" class="container-fluid">
 				<div class="container h-100 pt-4 pb-4">
 					<div class="row h-50 pt-4 justify-content-center">
-						<div class="col-2">
+						<div class="col-8 col-md-4 col-lg-2">
 							<div class="image-box rounded-circle ratio ratio-1x1"></div>
 						</div>
 					</div>
@@ -50,7 +57,8 @@
 						<div class="col-auto">
 							<h1 class="text-center m-0 pb-3">START BOOTSTRAP</h1>
 							<div class="text-center pb-3">-----------------------------------------------------</div>
-							<h6 class="text-center">GRAPHIC ARTIST- WEB DESIGNER- ILLUSTRATOR</h6>
+							<!-- TODO: FIxare la centratura in mobile -->
+							<h6 class="text-center text-nowrap text-center">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h6>
 						</div>
 					</div>
 				</div>
@@ -64,22 +72,22 @@
 						<div class="text-center pb-3">-----------------------------------------------------</div>
 					</div>
 					<div class="row">
-						<div class="col-4 pb-4">
+						<div class="col-12 col-md-6 col-lg-4 pb-4">
 							<div class="image-box rounded"></div>
 						</div>
-						<div class="col-4 pb-4">
+						<div class="col-12 col-md-6 col-lg-4 pb-4">
 							<div class="image-box rounded"></div>
 						</div>
-						<div class="col-4 pb-4">
+						<div class="col-12 col-md-6 col-lg-4 pb-4">
 							<div class="image-box rounded"></div>
 						</div>
-						<div class="col-4 pb-4">
+						<div class="col-12 col-md-6 col-lg-4 pb-4">
 							<div class="image-box rounded"></div>
 						</div>
-						<div class="col-4 pb-4">
+						<div class="col-12 col-md-6 col-lg-4 pb-4">
 							<div class="image-box rounded"></div>
 						</div>
-						<div class="col-4 pb-4">
+						<div class="col-12 col-md-6 col-lg-4 pb-4">
 							<div class="image-box rounded"></div>
 						</div>
 					</div>
@@ -95,11 +103,11 @@
 							<div class="text-center pb-3">-----------------------------------------------------</div>
 						</div>
 					</div>
-					<div class="row mb-4">
-						<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo debitis laboriosam, commodi et ad veniam quasi dolores ipsa magni qui, a deleniti, consectetur sequi. Rerum repellat eaque beatae sapiente?</div>
-						<div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo debitis laboriosam, commodi et ad veniam quasi dolores ipsa magni qui, a deleniti, consectetur sequi. Rerum repellat eaque beatae sapiente?</div>
+					<div class="row justify-content-center mb-4">
+						<div class="pb-4 col-12 col-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo debitis laboriosam, commodi et ad veniam quasi dolores ipsa magni qui, a deleniti, consectetur sequi. Rerum repellat eaque beatae sapiente?</div>
+						<div class="pb-4 col-12 col-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo debitis laboriosam, commodi et ad veniam quasi dolores ipsa magni qui, a deleniti, consectetur sequi. Rerum repellat eaque beatae sapiente?</div>
 					</div>
-					<div class="row mb-4">
+					<div class="row mb-2">
 						<div class="col text-center">
 							<button type="button" class="btn btn-link border text-decoration-none text-reset"><i class="fas fa-download"></i> Download</button>
 						</div>
@@ -114,16 +122,18 @@
 						<h2 class="text-center m-0 pb-3">CONTACT ME</h2>
 						<div class="text-center pb-3">-----------------------------------------------------</div>
 					</div>
-					<div class="row">
-						<span class="ps-0 text-secondary">Name</span>
-						<hr class="mt-2 mb-2" />
-						<span class="ps-0 text-secondary">Email Address</span>
-						<hr class="mt-2 mb-2" />
-						<span class="ps-0 text-secondary">Phone Number</span>
-						<hr class="mt-2 mb-2" />
-						<span class="ps-0 text-secondary">Message</span>
-						<hr class="mt-2 mb-2" />
-						<button type="button" class="btn col-1 mb-5">Send</button>
+					<div class="row justify-content-center">
+						<div class="ps-0 col-7 col-md-8 text-secondary">Name</div>
+						<hr class="mt-2 mb-2 col-7 col-md-8" />
+						<div class="ps-0 col-7 col-md-8 text-secondary">Email Address</div>
+						<hr class="mt-2 mb-2 col-7 col-md-8" />
+						<div class="ps-0 col-7 col-md-8 text-secondary">Phone Number</div>
+						<hr class="mt-2 mb-2 col-7 col-md-8" />
+						<div id="contact-me-message" class="ps-0 col-7 col-md-8 text-secondary">Message</div>
+						<hr class="mt-2 mb-2 col-7 col-md-8" />
+						<div class="col-7 col-md-8 p-0">
+							<button type="button" class="btn col-md-2 mb-5">Send</button>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -136,21 +146,21 @@
 			<div id="top-footer" class="container-fluid">
 				<div class="container">
 					<div class="row justify-content-center align-items-center text-center pt-5 pb-5">
-						<div id="footer-location" class="col-4">
-							<h6>LOCATION</h6>
-							<p class="m-0">2214 John Daniel Drive Clark, MO<br />54243</p>
+						<div id="footer-location" class=" col-12 col-md-4">
+							<h5>LOCATION</h5>
+							<p class="m-0">2214 John Daniel Drive Clark, MO 54243</p>
 						</div>
 
-						<div id="footer-socials" class="col">
-							<h6>AROUND THE WEB</h6>
+						<div id="footer-socials" class="col-12 col-md-4"">
+							<h5>AROUND THE WEB</h5>
 							<i class="fab fa-facebook-f border rounded-circle p-2 m-1"></i>
 							<i class="fab fa-google-plus-g border rounded-circle p-2 m-1"></i>
 							<i class="fab fa-twitter border rounded-circle p-2 m-1"></i>
 							<i class="fab fa-linkedin-in border rounded-circle p-2 m-1"></i>
 						</div>
 
-						<div id="footer-about" class="col">
-							<h6>ABOUT FREELANCER</h6>
+						<div id="footer-about" class="col-12 col-md-4"">
+							<h5>ABOUT FREELANCER</h5>
 							<p class="m-0">
 								Freelance is a free to use, open source Bootstrap theme created by
 								<span><a class="text-decoration-none" href="https://getbootstrap.com/">Start Bootstrap</a></span>

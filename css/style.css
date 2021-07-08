@@ -16,10 +16,15 @@ body {
 #header {
 	background: #2c3e50;
 	color: #fff;
+	height: 90px;
 }
 /* Fine Header */
 /* -------------------------------------------------- */
 /* Inizio Main */
+#jumbotron {
+	margin-top: 90px;
+}
+
 #jumbotron,
 #about {
 	background: #1abc9c;
@@ -27,9 +32,12 @@ body {
 }
 
 /* Box Messaggio in Contact Me */
-span.ps-0:nth-child(7) {
-	height: 120px;
+#contact-me-message {
+	min-height: 150px;
+	resize: vertical;
+	overflow: hidden;
 }
+
 #contact-me button {
 	background: #1abc9c;
 	color: #fff;
@@ -67,4 +75,18 @@ span.ps-0:nth-child(7) {
 
 .image-box.rounded {
 	height: 200px;
+}
+
+@media (max-width: 767px) {
+	#footer-socials i {
+		height: 70px;
+		width: 70px;
+		font-size: 24px;
+		line-height: 50px;
+	}
+
+	#footer-location,
+	#footer-socials {
+		margin-bottom: 50px;
+	}
 }
