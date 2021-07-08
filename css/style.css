@@ -12,22 +12,35 @@ body {
 }
 
 img {
-	width: 100%
+	width: 100%;
 }
+
+.spacer::before,
+.spacer::after {
+	content: '';
+	height: 0.25em;
+	width: 7.5em;
+	border-radius: 3em;
+	margin: 1em;
+	background: white;
+}
+
+.spacer-black::before,
+.spacer-black::after {
+	background: black;
+}
+
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Header */
-#header {
+.navbar {
 	background: #2c3e50;
 	color: #fff;
-	height: 90px;
 }
+
 /* Fine Header */
 /* -------------------------------------------------- */
 /* Inizio Main */
-#jumbotron {
-	margin-top: 90px;
-}
 
 #jumbotron,
 #about {
@@ -36,11 +49,6 @@ img {
 }
 
 /* Box Messaggio in Contact Me */
-#contact-me-message {
-	min-height: 150px;
-	resize: vertical;
-	overflow: hidden;
-}
 
 #contact-me button {
 	background: #1abc9c;
@@ -73,34 +81,12 @@ img {
 /* Fine Footer */
 /* -------------------------------------------------- */
 
-.image-box {
-	background: lightblue;
-}
-
-.image-box.rounded {
-	height: 200px;
-}
-
+/* Media Queries */
 @media (max-width: 767px) {
 	#footer-socials i {
 		height: 70px;
 		width: 70px;
 		font-size: 24px;
 		line-height: 50px;
-	}
-
-	#footer-location,
-	#footer-socials {
-		margin-bottom: 50px;
-	}
-}
-
-@media (min-width: 768px) {
-	header button {
-		display: none;
-	}
-
-	header #navbarToggleExternalContent {
-		display: block;
 	}
 }
