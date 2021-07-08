@@ -40,6 +40,24 @@ img {
 	color: #fff;
 }
 
+#hamburger-menu {
+	display: none;
+	position: relative;
+}
+
+#hamburger-menu i:hover + #hamburger-menu-content,
+#hamburger-menu i:active + #hamburger-menu-content,
+#hamburger-menu i:target + #hamburger-menu-content {
+	display: block;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background: #2c3e50;
+}
+
+#extended-nav {
+	display: block;
+}
 /* Fine Header */
 /* -------------------------------------------------- */
 /* Inizio Main */
@@ -93,5 +111,20 @@ img {
 		width: 70px;
 		font-size: 24px;
 		line-height: 50px;
+	}
+
+	#extended-nav {
+		display: none;
+	}
+
+	#hamburger-menu {
+		display: block;
+	}
+
+	#hamburger-menu i {
+		padding: 10px;
+		border: 1px solid white;
+		border-radius: 10px;
+		color: white;
 	}
 }
