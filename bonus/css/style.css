@@ -33,14 +33,19 @@ img {
 /* Fine Common */
 /* -------------------------------------------------- */
 /* Inizio Header */
-.navbar {
+#header {
+	height: 80px;
 	background: #2c3e50;
+	position: fixed;
 	color: #fff;
 }
 
 /* Fine Header */
 /* -------------------------------------------------- */
 /* Inizio Main */
+#jumbotron {
+	padding-top: 80px;
+}
 
 #jumbotron,
 #about {
