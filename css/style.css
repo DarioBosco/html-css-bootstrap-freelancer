@@ -37,19 +37,32 @@ span.ps-0:nth-child(7) {
 /* Fine Main */
 /* -------------------------------------------------- */
 /* Inizio Footer */
-footer {
-	height: 500px;
+#top-footer,
+#bottom-footer {
+	color: #fff;
+}
+
+#top-footer {
+	background: #3a546d;
+}
+
+#bottom-footer {
+	background: #2c3e50;
+}
+
+#footer-socials i {
+	height: 35px;
+	width: 35px;
+}
+
+#footer-about a {
+	color: #1abc9c;
 }
 /* Fine Footer */
 /* -------------------------------------------------- */
 
 .image-box {
 	background: lightblue;
-}
-
-.spacer {
-	height: 5px;
-	width: auto;
 }
 
 .image-box.rounded {
