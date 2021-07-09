@@ -71,6 +71,24 @@ img {
 	color: #fff;
 }
 
+.portfolio-img:hover .layover {
+	visibility: visible;
+}
+
+.layover {
+	position: absolute;
+	display: flex;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-size: 60px;
+	background-color: rgba(0, 0, 0, 0.5);
+	visibility: hidden;
+}
+
 /* Box Messaggio in Contact Me */
 
 #contact-me button {
